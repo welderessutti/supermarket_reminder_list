@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Supermarket Reminder List</title>
 </head>
 <body>
+    <main>
+        <div class="container-form">
+            <div class="container-img">
+                <img class="img-shop-cart" src="img/online-shopping-128.png" alt="">
+            </div>
+
+            <form class="main-form" action="">
+                <label class="main-form-label" for="item">Item:</label>
+                <input class="main-form-input" type="text" name="item" id="item">
+
+                <label class="main-form-label" for="quantity">Quantity:</label>
+                <input class="main-form-input"type="number" name="quantity" id="quantity">
+
+                <input class="main-form-button" type="submit" value="Add">
+            </form>
+        </div>
+
+        <div class="container-list">
+            <ul class="list-itens">
+                <li class="itens">aaa</li>
+                <li class="itens">bbb</li>
+                <li class="itens">ccc</li>
+            </ul>
+        </div>
+    </main>
     
     <script src="js/main.js"></script>
 </body>

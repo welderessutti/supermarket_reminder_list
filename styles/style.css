@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+html {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    padding: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.container-img {
+    text-align: center;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-list {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+}
