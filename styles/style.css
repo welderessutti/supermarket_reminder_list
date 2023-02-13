@@ -107,13 +107,15 @@ main {
 }
 
 .item:nth-child(odd) {
-    background-color: var(--color04);
+    background-color: var(--color05);
     color: white;
+    border: 3px solid var(--color05);
 }
 
 .item:nth-child(even) {
     background-color: white;
-    color: var(--color04);
+    color: var(--color05);
+    border: 3px solid var(--color05);
 }
 
 .item:nth-child(odd) > strong {
@@ -122,10 +124,10 @@ main {
     align-items: center;
     height: 3rem;
     width: 3rem;
-    border: 3px solid var(--color04);
+    border: 3px solid var(--color05);
     border-radius: 30px;
     background-color: white;
-    color: var(--color04);
+    color: var(--color05);
 }
 
 .item:nth-child(even) > strong {
@@ -136,7 +138,7 @@ main {
     width: 3rem;
     border: 3px solid white;
     border-radius: 30px;
-    background-color: var(--color04);
+    background-color: var(--color05);
     color: white;
 }
 
@@ -144,22 +146,34 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
-    width: 3rem;
-    border: 3px solid var(--color04);
+    height: 3.3rem;
+    width: 3.3rem;
+    border: 3px solid var(--color05);
     border-radius: 30px;
     background-color: white;
-    color: var(--color04);
+    color: var(--color05);
 }
 
 .item:nth-child(even) > button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
-    width: 3rem;
+    height: 3.3rem;
+    width: 3.3rem;
     border: 3px solid white;
     border-radius: 30px;
-    background-color: var(--color04);
+    background-color: var(--color05);
     color: white;
+}
+
+.main-form-button:hover {
+    background-color: var(--color02);
+    border: 0.15rem solid var(--color02);
+    cursor: pointer;
+}
+
+.item > button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
