@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Noto+Sans:wght@400&display=swap');
+
+:root {
+    --font-form: 'Noto Sans', sans-serif;
+    --font-itens: 'Kite One', sans-serif;
+    --color01: #F2F2F2;
+    --color02: #578BF2;
+    --color03: #1D64F2;
+    --color04: #0554F2;
+    --color05: #1A2873;
+}
 
 html {
     height: 100vh;
@@ -7,7 +18,7 @@ html {
 }
 
 body {
-    background-color: blue;
+    background-color: var(--color05);
     padding: 10%;
 }
 
@@ -22,7 +33,9 @@ main {
     padding: 10%;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-    background-color: white;
+    font-family: var(--font-form);
+    color: var(--color05);
+    background-color: var(--color01);
 }
 
 .container-img {
@@ -44,7 +57,8 @@ main {
     margin-bottom: 0.5rem;
     padding: 0 0.5rem;
     border-radius: 0.5rem;
-    border: 0.15rem solid gray;
+    border: 0.15rem solid var(--color05);
+    background-color: white;
     font-size: 1rem;
 }
 
@@ -52,13 +66,18 @@ main {
     height: 3.5rem;
     margin-top: 1rem;
     border-radius: 0.5rem;
-    border: 0.15rem solid black;
+    border: 0.15rem solid var(--color04);
+    font-family: var(--font-form);
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--color04);
 }
 
 .container-list {
     padding: 10%;
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: var(--color01);
 }
 
 .list-itens {
@@ -71,5 +90,76 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3.4rem;
+    font-family: var(--font-itens);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.item > strong {
+    font-family: var(--font-form);
+}
+
+.item > button {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.item:nth-child(odd) {
+    background-color: var(--color04);
+    color: white;
+}
+
+.item:nth-child(even) {
+    background-color: white;
+    color: var(--color04);
+}
+
+.item:nth-child(odd) > strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 3rem;
+    width: 3rem;
+    border: 3px solid var(--color04);
+    border-radius: 30px;
+    background-color: white;
+    color: var(--color04);
+}
+
+.item:nth-child(even) > strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid white;
+    border-radius: 30px;
+    background-color: var(--color04);
+    color: white;
+}
+
+.item:nth-child(odd) > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid var(--color04);
+    border-radius: 30px;
+    background-color: white;
+    color: var(--color04);
+}
+
+.item:nth-child(even) > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid white;
+    border-radius: 30px;
+    background-color: var(--color04);
+    color: white;
 }
