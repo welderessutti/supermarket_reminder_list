@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 650px;
+    }
+
+    .container-img {
+        height: 16rem;
+        background: url("../img/online-shopping-256.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container-form {
+        padding: 5rem;
+    }
+
+    .container-list {
+        padding: 5rem;
+    }
+}
