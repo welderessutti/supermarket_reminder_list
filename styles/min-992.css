@@ -12,25 +12,29 @@
     .container-form {        
         display: flex;
         flex-direction: row;
-        max-height: 416px;
-        margin: 0 2rem 0 0;
-        padding: 5rem;        
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem;
+        height: 416px;
+        min-width: 50%;
+        margin: 0 2rem 0 0;       
     }
 
     .container-img {
-        width: 16.5rem;
+        width: 8rem;
         margin: 0;
-        background: url("../img/online-shopping-256.png");
+        background: url("../img/online-shopping-128.png");
         background-repeat: no-repeat;
         background-position: center;
     }
 
     .main-form {
         justify-content: center;
-        margin-left: 3rem;
+        width: 50%;
     }
 
     .container-list {
         padding: 5rem;
+        min-width: 50%;
     }
 }
